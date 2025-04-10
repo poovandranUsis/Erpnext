@@ -1,6 +1,3 @@
-## Poova
-
-Test Custom API
 
 #### License
 
