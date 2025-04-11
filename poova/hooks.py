@@ -228,5 +228,6 @@ app_license = "mit"
 # }
 fixtures=[
     "testing",
-    "Harish"
+    "Harish",
+    "Web Page"
 ]
