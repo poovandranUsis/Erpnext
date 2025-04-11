@@ -1,0 +1,58 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-02-21 17:04:28.192742",
+  "name": "Review",
+  "workflow_action_name": "Review"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-02-21 21:57:43.978624",
+  "name": "Approved by HR",
+  "workflow_action_name": "Approved by HR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-02-21 21:58:06.601096",
+  "name": "Rejected by HR",
+  "workflow_action_name": "Rejected by HR"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-02-21 21:59:51.998874",
+  "name": "Approved by Admin",
+  "workflow_action_name": "Approved by Admin"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-02-21 22:00:34.537639",
+  "name": "Rejected by Admin",
+  "workflow_action_name": "Rejected by Admin"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-03-14 12:41:02.981183",
+  "name": "ReSubmit",
+  "workflow_action_name": "ReSubmit"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-02-21 17:04:28.187065",
+  "name": "Approve",
+  "workflow_action_name": "Approve"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-02-21 17:04:28.189841",
+  "name": "Reject",
+  "workflow_action_name": "Reject"
+ }
+]

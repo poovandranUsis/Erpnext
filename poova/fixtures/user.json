@@ -1,0 +1,851 @@
+[
+ {
+  "allowed_in_mentions": 1,
+  "api_key": null,
+  "api_secret": null,
+  "banner_image": null,
+  "bio": null,
+  "birth_date": null,
+  "block_modules": [
+   {
+    "module": "Accounts",
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Assets",
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Automation",
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Bulk Transaction",
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Buying",
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Communication",
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Contacts",
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Core",
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "CRM",
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Custom",
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Email",
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "ERPNext Integrations",
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Geo",
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Integrations",
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Maintenance",
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Manufacturing",
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Portal",
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Printing",
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Projects",
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Quality Management",
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Regional",
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Selling",
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Setup",
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Social",
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Stock",
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Subcontracting",
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Support",
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Telephony",
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Utilities",
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Website",
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Workflow",
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Desk",
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "E360",
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   }
+  ],
+  "bypass_restrict_ip_check_if_2fa_enabled": 0,
+  "default_workspace": "Home",
+  "defaults": [],
+  "desk_theme": "Light",
+  "docstatus": 0,
+  "doctype": "User",
+  "document_follow_frequency": "Daily",
+  "document_follow_notify": 0,
+  "email": "yugendranp24@gmail.com",
+  "email_signature": null,
+  "employee_number": "USE24001",
+  "enabled": 1,
+  "first_name": "SHA",
+  "follow_assigned_documents": 0,
+  "follow_commented_documents": 0,
+  "follow_created_documents": 0,
+  "follow_liked_documents": 0,
+  "follow_shared_documents": 0,
+  "full_name": "SHA sh",
+  "gender": null,
+  "home_settings": null,
+  "interest": null,
+  "language": "en",
+  "last_active": "2025-03-25 10:38:39.879529",
+  "last_ip": "172.18.0.1",
+  "last_known_versions": "{\"frappe\": {\"title\": \"Frappe Framework\", \"description\": \"Full stack web framework with Python, Javascript, MariaDB, Redis, Node\", \"branch\": \"\", \"version\": \"15.20.0\"}, \"erpnext\": {\"title\": \"ERPNext\", \"description\": \"ERP made simple\", \"branch\": \"\", \"version\": \"15.19.1\"}}",
+  "last_login": "2025-03-25 10:06:48.029162",
+  "last_name": "sh",
+  "last_password_reset_date": null,
+  "last_reset_password_key_generated_on": "2025-02-21 21:51:49.803245",
+  "location": null,
+  "login_after": 0,
+  "login_before": 0,
+  "logout_all_sessions": 1,
+  "middle_name": null,
+  "mobile_no": null,
+  "modified": "2025-04-11 12:17:08.463921",
+  "module_profile": "E360 Module",
+  "mute_sounds": 0,
+  "name": "yugendranp24@gmail.com",
+  "new_password": "",
+  "onboarding_status": "{}",
+  "phone": null,
+  "redirect_url": null,
+  "reset_password_key": "1ae2ed00c263899fd0c18cff0eba3db054f5b2e26c59530b14ccc0ce57038a1f",
+  "restrict_ip": null,
+  "role_profile_name": "USIS EMPLOYEE ROLE",
+  "roles": [
+   {
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "roles",
+    "parenttype": "User",
+    "role": "SALESPOC"
+   }
+  ],
+  "send_me_a_copy": 0,
+  "send_welcome_email": 1,
+  "simultaneous_sessions": 2,
+  "social_logins": [
+   {
+    "parent": "yugendranp24@gmail.com",
+    "parentfield": "social_logins",
+    "parenttype": "User",
+    "provider": "frappe",
+    "userid": "ec8a8a14dee3cd2900d1555b2f0b25680ec3a46",
+    "username": null
+   }
+  ],
+  "thread_notify": 1,
+  "time_zone": "Asia/Kolkata",
+  "unsubscribed": 0,
+  "user_emails": [],
+  "user_image": null,
+  "user_type": "System User",
+  "username": "sha"
+ },
+ {
+  "allowed_in_mentions": 0,
+  "api_key": null,
+  "api_secret": null,
+  "banner_image": null,
+  "bio": null,
+  "birth_date": null,
+  "block_modules": [
+   {
+    "module": "Accounts",
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Assets",
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Automation",
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Bulk Transaction",
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Buying",
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Communication",
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Contacts",
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Core",
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "CRM",
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Custom",
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Email",
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "ERPNext Integrations",
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Geo",
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Integrations",
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Maintenance",
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Manufacturing",
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Portal",
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Printing",
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Projects",
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Quality Management",
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Regional",
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Selling",
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Setup",
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Social",
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Stock",
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Subcontracting",
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Support",
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Telephony",
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Utilities",
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Website",
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Workflow",
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Desk",
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "E360",
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   }
+  ],
+  "bypass_restrict_ip_check_if_2fa_enabled": 0,
+  "default_workspace": "WORK",
+  "defaults": [],
+  "desk_theme": "Light",
+  "docstatus": 0,
+  "doctype": "User",
+  "document_follow_frequency": "Daily",
+  "document_follow_notify": 0,
+  "email": "manikandan.k@usistech.com",
+  "email_signature": null,
+  "employee_number": "20932",
+  "enabled": 1,
+  "first_name": "Mani",
+  "follow_assigned_documents": 0,
+  "follow_commented_documents": 0,
+  "follow_created_documents": 0,
+  "follow_liked_documents": 0,
+  "follow_shared_documents": 0,
+  "full_name": "Mani",
+  "gender": null,
+  "home_settings": null,
+  "interest": null,
+  "language": "en",
+  "last_active": "2025-04-09 18:13:59.957385",
+  "last_ip": "172.18.0.1",
+  "last_known_versions": "{\"frappe\": {\"title\": \"Frappe Framework\", \"description\": \"Full stack web framework with Python, Javascript, MariaDB, Redis, Node\", \"branch\": \"\", \"version\": \"15.20.0\"}, \"erpnext\": {\"title\": \"ERPNext\", \"description\": \"ERP made simple\", \"branch\": \"\", \"version\": \"15.19.1\"}}",
+  "last_login": "2025-04-09 16:46:48.236694",
+  "last_name": null,
+  "last_password_reset_date": null,
+  "last_reset_password_key_generated_on": "2025-03-12 12:16:18.182384",
+  "location": null,
+  "login_after": 0,
+  "login_before": 0,
+  "logout_all_sessions": 1,
+  "middle_name": null,
+  "mobile_no": null,
+  "modified": "2025-04-09 18:04:57.531463",
+  "module_profile": "E360 Module",
+  "mute_sounds": 0,
+  "name": "manikandan.k@usistech.com",
+  "new_password": "",
+  "onboarding_status": "{}",
+  "phone": null,
+  "redirect_url": null,
+  "reset_password_key": "5ea9177fd7ec1eefc613e8cfa26ccb40f9892d9c9a37aeb640c9e1c431e44d86",
+  "restrict_ip": null,
+  "role_profile_name": "EnigneerPOC",
+  "roles": [
+   {
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "roles",
+    "parenttype": "User",
+    "role": "Engineer"
+   }
+  ],
+  "send_me_a_copy": 0,
+  "send_welcome_email": 1,
+  "simultaneous_sessions": 1,
+  "social_logins": [
+   {
+    "parent": "manikandan.k@usistech.com",
+    "parentfield": "social_logins",
+    "parenttype": "User",
+    "provider": "frappe",
+    "userid": "a1c7588e46575e3f2f4c1c9bdc304ba589d3b8c",
+    "username": null
+   }
+  ],
+  "thread_notify": 0,
+  "time_zone": "Asia/Kolkata",
+  "unsubscribed": 0,
+  "user_emails": [],
+  "user_image": null,
+  "user_type": "System User",
+  "username": "mani"
+ },
+ {
+  "allowed_in_mentions": 1,
+  "api_key": null,
+  "api_secret": null,
+  "banner_image": null,
+  "bio": null,
+  "birth_date": null,
+  "block_modules": [
+   {
+    "module": "Accounts",
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Assets",
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Automation",
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Bulk Transaction",
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Buying",
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Communication",
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Contacts",
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Core",
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "CRM",
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Custom",
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Desk",
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "E360",
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Email",
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "ERPNext Integrations",
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Geo",
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Integrations",
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Maintenance",
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Manufacturing",
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Portal",
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Printing",
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Projects",
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Quality Management",
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Regional",
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Selling",
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Setup",
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Social",
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Stock",
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Subcontracting",
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Support",
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Telephony",
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Utilities",
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Website",
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   },
+   {
+    "module": "Workflow",
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "block_modules",
+    "parenttype": "User"
+   }
+  ],
+  "bypass_restrict_ip_check_if_2fa_enabled": 0,
+  "default_workspace": "WORK",
+  "defaults": [],
+  "desk_theme": "Light",
+  "docstatus": 0,
+  "doctype": "User",
+  "document_follow_frequency": "Daily",
+  "document_follow_notify": 0,
+  "email": "naveenanna@gmail.con",
+  "email_signature": null,
+  "employee_number": "03493",
+  "enabled": 1,
+  "first_name": "Naveen",
+  "follow_assigned_documents": 0,
+  "follow_commented_documents": 0,
+  "follow_created_documents": 0,
+  "follow_liked_documents": 0,
+  "follow_shared_documents": 0,
+  "full_name": "Naveen",
+  "gender": null,
+  "home_settings": null,
+  "interest": null,
+  "language": "en",
+  "last_active": "2025-04-02 11:08:19.851701",
+  "last_ip": "172.18.0.1",
+  "last_known_versions": "{\"frappe\": {\"title\": \"Frappe Framework\", \"description\": \"Full stack web framework with Python, Javascript, MariaDB, Redis, Node\", \"branch\": \"\", \"version\": \"15.20.0\"}, \"erpnext\": {\"title\": \"ERPNext\", \"description\": \"ERP made simple\", \"branch\": \"\", \"version\": \"15.19.1\"}}",
+  "last_login": "2025-04-02 11:06:58.743833",
+  "last_name": null,
+  "last_password_reset_date": null,
+  "last_reset_password_key_generated_on": "2025-03-25 15:06:32.511208",
+  "location": null,
+  "login_after": 0,
+  "login_before": 0,
+  "logout_all_sessions": 1,
+  "middle_name": null,
+  "mobile_no": null,
+  "modified": "2025-04-09 16:47:22.886298",
+  "module_profile": null,
+  "mute_sounds": 0,
+  "name": "naveenanna@gmail.con",
+  "new_password": "",
+  "onboarding_status": "{}",
+  "phone": null,
+  "redirect_url": null,
+  "reset_password_key": "71736e8f41338b697e8548a5447a9523802e461bfcfffd5b882e5694304817e6",
+  "restrict_ip": null,
+  "role_profile_name": "EnigneerPOC",
+  "roles": [
+   {
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "roles",
+    "parenttype": "User",
+    "role": "Engineer"
+   }
+  ],
+  "send_me_a_copy": 0,
+  "send_welcome_email": 1,
+  "simultaneous_sessions": 2,
+  "social_logins": [
+   {
+    "parent": "naveenanna@gmail.con",
+    "parentfield": "social_logins",
+    "parenttype": "User",
+    "provider": "frappe",
+    "userid": "e09f2cb3bcf428506f979e292b6701516d1fb13",
+    "username": null
+   }
+  ],
+  "thread_notify": 1,
+  "time_zone": "Asia/Kolkata",
+  "unsubscribed": 0,
+  "user_emails": [],
+  "user_image": null,
+  "user_type": "System User",
+  "username": "naveen"
+ }
+]

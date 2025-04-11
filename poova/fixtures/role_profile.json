@@ -1,0 +1,32 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2025-03-14 12:30:40.756161",
+  "name": "CustomerPOC",
+  "role_profile": "CustomerPOC",
+  "roles": [
+   {
+    "parent": "CustomerPOC",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "CustomerPOC"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2025-03-12 12:17:26.255408",
+  "name": "EnigneerPOC",
+  "role_profile": "EnigneerPOC",
+  "roles": [
+   {
+    "parent": "EnigneerPOC",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "Engineer"
+   }
+  ]
+ }
+]

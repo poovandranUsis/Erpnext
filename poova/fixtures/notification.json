@@ -1,0 +1,63 @@
+[
+ {
+  "attach_print": 0,
+  "channel": "Email",
+  "condition": null,
+  "date_changed": null,
+  "days_in_advance": 0,
+  "docstatus": 0,
+  "doctype": "Notification",
+  "document_type": "SalesPoc",
+  "enabled": 1,
+  "event": "Value Change",
+  "is_standard": 1,
+  "message": "Product Status {{doc.status}}\n",
+  "message_type": "Markdown",
+  "method": null,
+  "modified": "2025-04-11 12:21:20.540469",
+  "module": "Poova",
+  "name": "Sales",
+  "print_format": null,
+  "property_value": null,
+  "recipients": [
+   {
+    "bcc": null,
+    "cc": null,
+    "condition": "doc.status=='Submitted'",
+    "parent": "Sales",
+    "parentfield": "recipients",
+    "parenttype": "Notification",
+    "receiver_by_document_field": "",
+    "receiver_by_role": "Engineer"
+   },
+   {
+    "bcc": null,
+    "cc": null,
+    "condition": "doc.status=='Accepted'",
+    "parent": "Sales",
+    "parentfield": "recipients",
+    "parenttype": "Notification",
+    "receiver_by_document_field": "",
+    "receiver_by_role": "SALESPOC"
+   },
+   {
+    "bcc": null,
+    "cc": null,
+    "condition": "doc.status=='Rejected'",
+    "parent": "Sales",
+    "parentfield": "recipients",
+    "parenttype": "Notification",
+    "receiver_by_document_field": "",
+    "receiver_by_role": "SALESPOC"
+   }
+  ],
+  "send_system_notification": 1,
+  "send_to_all_assignees": 0,
+  "sender": "Admin",
+  "sender_email": "yugendran@usistech.com",
+  "set_property_after_alert": null,
+  "slack_webhook_url": null,
+  "subject": "{{doc.name}} status changed to {{doc.status}}",
+  "value_changed": "status"
+ }
+]

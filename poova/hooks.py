@@ -226,8 +226,66 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
-fixtures=[
-    "testing",
-    "Harish",
-    "Web Page"
+#fixtures = [
+    # {
+    #     "dt": "Doctype",
+    #     "filters": [["name", "in", ["SalesPoc", "Vehicles","childdoc","Userchild","testingcal","CustomerPOC"]]]
+    # },
+    
+#]
+fixtures = [
+    {
+        "dt": "Web Page",
+        "filters": [["module", "=", "Poova"]]
+    },
+      {
+        "dt": "Role",
+        "filters": [["name", "in", ["Engineer", "CustomerPOC", "SALESPOC"]]]
+    },
+    {
+        "dt": "Custom DocPerm",
+        "filters": [["parent", "in", ["SalesPoc", "Vehicles", "childdoc", "Userchild", "testingcal", "CustomerPOC"]]]
+    },
+     {
+        "dt": "User",
+        "filters": [["name", "in", ["manikandan.k@usistech.com", "naveenanna@gmail.con","yugendranp24@gmail.com"]]]
+    },
+    {
+        "dt": "Role Profile",
+        "filters": [["name", "in", ["SalesPOC", "CustomerPOC","EnigneerPOC"]]]
+    },
+     {
+        "dt": "Workflow"
+    },
+    {
+        "dt": "Workflow State"
+    },
+    {
+        "dt": "Workflow Action Master"
+    },
+     {
+        "dt": "Custom HTML Block"
+    },
+    {
+        "dt": "Notification",
+        "filters": [["name", "in", ["Sales"]]]
+    },
+    {
+        "dt": "Module Profile",
+        "filters": [["name", "in", ["E360 Module"]]]
+    },
+    {
+        "dt": "Workspace",
+        "filters": [["name", "in", ["WORK"]]]
+    },
+    {
+        "dt": "Client Script",
+    },
+    {
+        "dt": "Email Account",
+        "filters": [["name", "in", ["Admin"]]]
+    },
 ]
+
+
+

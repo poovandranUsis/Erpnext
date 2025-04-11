@@ -1,0 +1,104 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Custom HTML Block",
+  "html": "<link href=\"https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css\" rel=\"stylesheet\">\r\n<script src=\"https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js\"></script>\r\n\r\n<div>\r\n    <div id=\"calendar\"></div>\r\n</div>\r\n\r\n",
+  "modified": "2025-04-01 10:50:11.456351",
+  "name": "DashBoardCalendar",
+  "private": 0,
+  "roles": [
+   {
+    "parent": "DashBoardCalendar",
+    "parentfield": "roles",
+    "parenttype": "Custom HTML Block",
+    "role": "Engineer"
+   },
+   {
+    "parent": "DashBoardCalendar",
+    "parentfield": "roles",
+    "parenttype": "Custom HTML Block",
+    "role": "SALESPOC"
+   },
+   {
+    "parent": "DashBoardCalendar",
+    "parentfield": "roles",
+    "parenttype": "Custom HTML Block",
+    "role": "System Manager"
+   },
+   {
+    "parent": "DashBoardCalendar",
+    "parentfield": "roles",
+    "parenttype": "Custom HTML Block",
+    "role": "Administrator"
+   }
+  ],
+  "script": "var calendarEl = root_element.querySelector('#calendar');\r\n        calendarEl.textContent=\"testing\";\r\ndocument.addEventListener('DOMContentLoaded', function () {\r\n    frappe.ready(function () {\r\n        var calendarEl = root_element.querySelector('#calendar');\r\n        calendarEl.textContent=\"hello\";\r\n        if (!calendarEl) {\r\n            console.error(\"Calendar element not found.\");\r\n            return;\r\n        }\r\n\r\n        const images = {\r\n          jobicon : \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABtUlEQVR4Aa1Wi3GDMAw1vQzABvEIjMAGZYNkg9AJwgZhA7pBukFGoBvQTuBuoErJc1Acm7i56k6HbX2efhgKk0FE1PDjVR39FEXxlmP7YvKoYm6wtswtg67NM8SGO+HgbGD+wNrShWolt9Cxj5zvaSZZS6Qn7HvolEpHnG6ZJ+ynJIhy3jFXysiF0cHpqIDeYTMmQVSkpUp76/eJoGoMgN+38NHElC3Qx4hsg0ymqPFsLzqdWYhoQARVcN6gDJ42EVsvXy8BSIST2peBvEuBoJx0lwGaI7U8QKFVUZ8SQXiqA5kD12DrDwmGJ8IE0Nz0jXJg6ZaGAKCFH3eVR9MyNxNBWNdB9NdsE+U+j/cqpcB3TY8e7JkPCbXkCIdIvkQjLTc2RrqEu1iJLNLvFsqVBcLPIwAa+Cxj2TiKvL2kJoNu34krCGTVUrl6KD+8ilMgSwb+quhMJv0JhC4Ndmov5ZDxtP8CQvPc71FPTQPdX9dH1dxsED0tPc1v5hkEOv6DI8PQPptJGymDB6hgXGWUy5kcQmYOZfFfsnVCV4N0K5NH8sH3Dj+F+Sr5jinyufTny1x+bfpffZT/wwL3joQAAAAASUVORK5CYII=\",\r\n          techniciansicon : \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAPCAYAAAD+pA/bAAAAyElEQVR4AbWSDQ3CMBCFr1MwHNQBlVAJSMABOGAOkIAEJFQCOBgONhSUu+RK1nJ0TTi+5KU/ad/rNQfQQIzxHHOOoAkajkVAaL3bVUw9ag/14MPaGemSpRfySydUL1XA5xJXWreal2bDl4BLsTeuhghGqYpJMJO41cxPUYdh6WuWr8fBwu/MxphNWnRs7pXMCWoKlwUgDnT5COhBF/ueYTk7oUs08CkgxP8Q0hdpf0/2TYarcLxB45ZDS5XMLOLBeqLuJGxVGuEFaLkGQweqVP8AAAAASUVORK5CYII=\",\r\n          vechicleicon : \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAUCAYAAACXtf2DAAABFElEQVR4Ad1U2w3CMAx0EAN0hIwAG8AGjMAGiAmACRATwAawAWxAmaBlgrJBuKiOsIJpEWl/OOkaNXZ8dh421ALn3ALDjH5Dbto8IOAoAQPqGUNtEklbDJb6AIIfXYcYRsH3VB9ozvSYUxfwwVn0CmZiPgkhyFYL3oWACUEwlODYGPOIBSgBhjOu+L9UfCylCPhPapZN6P2h/YEAtl/rlBdwR/qha3iwf/5mgUARXd29sE3cd7BizVkafKuYgiOqr+MWvAdnvIkLXzCf2VLJ3CeTwa8UczdwAm7Ak6wkY9EiZIRxFVcVVR8a44r/rXvtSKYtWIvqqlhQ8bfCrxJr1/QJMM5d3ZMKztBSA1jkwP5nv17an7vv+u5j7kK5AAAAAElFTkSuQmCC\"\r\n        };\r\n\r\n        function fetchCalendarEvents() {\r\n            frappe.call({\r\n                method: \"frappe.client.get_value\",\r\n                args: {\r\n                    doctype: \"User\",\r\n                    fieldname: \"email\",\r\n                    filters: { name: frappe.session.user }\r\n                },\r\n                callback: function (userResponse) {\r\n                    let currentUserEmail = userResponse?.message?.email;\r\n                    if (!currentUserEmail) {\r\n                        console.warn(\"No user email found.\");\r\n                        return;\r\n                    }\r\n\r\n                    console.log(\"Current User Email:\", currentUserEmail);\r\n\r\n                    frappe.call({\r\n                        method: \"frappe.poc.api.get_role_testingcal_events\",\r\n                        args: { user_email: currentUserEmail },\r\n                        callback: function (response) {\r\n                            let events = response?.message?.map(e => {\r\n                                let startTime = new Date(e.startdate).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });\r\n                                let endTime = new Date(e.end_date).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });\r\n\r\n                                let newJobTitleHtml = `<div>${startTime} - ${endTime}<br>\r\n                                    <img src=\"${images.jobicon}\" width=\"15\"> ${e.product_name || e.name}<br>`;\r\n\r\n                                if (e.technicians?.length) {\r\n                                    newJobTitleHtml += `<img src=\"${images.techniciansicon}\" width=\"15\"> ${e.technicians.join(\", \")}<br>`;\r\n                                }\r\n                                if (e.vehicles?.length) {\r\n                                    newJobTitleHtml += `<img src=\"${images.vechicleicon}\" width=\"15\"> ${e.vehicles.join(\", \")}<br>`;\r\n                                }\r\n\r\n                                newJobTitleHtml += `</div>`;\r\n\r\n                                return {\r\n                                    id: e.name,\r\n                                    title: e.jobtitle,\r\n                                    start: e.startdate,\r\n                                    end: e.end_date,\r\n                                    extendedProps: { customTitle: newJobTitleHtml }\r\n                                };\r\n                            }) || [];\r\n\r\n                            console.log(\"Final Mapped Events:\", events);\r\n\r\n                            calendar.removeAllEvents();\r\n                            calendar.addEventSource(events);\r\n                        }\r\n                    });\r\n                }\r\n            });\r\n        }\r\n\r\n        // Initialize FullCalendar\r\n        var calendar = new FullCalendar.Calendar(calendarEl, {\r\n            initialView: \"timeGridDay\",\r\n            headerToolbar: {\r\n                left: \"prev,next today\",\r\n                center: \"title\",\r\n                right: \"dayGridMonth,timeGridWeek,timeGridDay\"\r\n            },\r\n            dayMaxEvents: true,\r\n            eventContent: function (arg) {\r\n                return arg.event.extendedProps.customTitle ? { html: arg.event.extendedProps.customTitle } : null;\r\n            }\r\n        });\r\n\r\n        calendar.render();\r\n        fetchCalendarEvents();\r\n    });\r\n});\r\n",
+  "style": "#calendar {\r\n  max-width: 700px;\r\n  margin: 40px auto;\r\n}"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom HTML Block",
+  "html": "\r\n<iframe src=\"http://localhost:8081/admindashboardcalendar\"  width=\"600px\" height=\"400px\" style=\"border:none;.container:none;\"></iframe>\r\n<a href=\"http://localhost:8081/testingpage\" target=\"_blank\" style=\"cursor: pointer;margin-left:40%;padding:2px;color:black;\"><strong>Click Go To Calendar </strong>\r\n</a>",
+  "modified": "2025-04-02 12:54:24.126277",
+  "name": "AdminDashBoardCalendar",
+  "private": 0,
+  "roles": [
+   {
+    "parent": "AdminDashBoardCalendar",
+    "parentfield": "roles",
+    "parenttype": "Custom HTML Block",
+    "role": "Administrator"
+   },
+   {
+    "parent": "AdminDashBoardCalendar",
+    "parentfield": "roles",
+    "parenttype": "Custom HTML Block",
+    "role": "System Manager"
+   }
+  ],
+  "script": null,
+  "style": null
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom HTML Block",
+  "html": "\r\n<iframe src=\"http://localhost:8081/dashboardrolebasedcalendar\"  width=\"600px\" height=\"400px\" style=\"border:none;.container:none;\"></iframe>\r\n<a href=\"http://localhost:8081/rolebasedcalendar\" target=\"_blank\" style=\"cursor: pointer;margin-left:40%;padding:2px;color:black;\"><strong>Click Go To Calendar </strong>\r\n</a>",
+  "modified": "2025-04-02 12:41:56.199421",
+  "name": "testing",
+  "private": 0,
+  "roles": [
+   {
+    "parent": "testing",
+    "parentfield": "roles",
+    "parenttype": "Custom HTML Block",
+    "role": "Engineer"
+   }
+  ],
+  "script": "",
+  "style": "iframe::-webkit-scrollbar {\r\n    display: none; /* For Chrome, Safari, and Edge */\r\n}\r\n"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom HTML Block",
+  "html": "<div onclick=\"window.open('http://localhost:8081/app/query-report/Next%20%26%20days%20Delivery%20Report','_blank')\" id='count' style=\"border:1px black solid;width:350px;border-radius:10px;cursor:pointer;\" >\n    <h5 style=\"padding:10px\">Delivery for Next 7 days ( <span class='currentdate'></span> - <span class='lastdate'></span>)</h5>\n    <h4 id='totalcount' style=\"padding:10px\"></h4>\n</div>",
+  "modified": "2025-04-02 09:43:49.904867",
+  "name": "Delivery for Next 7 days",
+  "private": 0,
+  "roles": [
+   {
+    "parent": "Delivery for Next 7 days",
+    "parentfield": "roles",
+    "parenttype": "Custom HTML Block",
+    "role": "Administrator"
+   },
+   {
+    "parent": "Delivery for Next 7 days",
+    "parentfield": "roles",
+    "parenttype": "Custom HTML Block",
+    "role": "System Manager"
+   }
+  ],
+  "script": "let startdate = new Date();\r\nlet enddate = new Date(startdate);\r\nenddate.setDate(startdate.getDate() + 6); // Fixed getDate()\r\n\r\n    root_element.querySelector('.currentdate').textContent = startdate.toLocaleDateString(\"en-US\", {        \r\n        day: \"numeric\",\r\n        month: \"short\"\r\n        \r\n    });\r\n\r\n    root_element.querySelector('.lastdate').textContent = enddate.toLocaleDateString(\"en-US\", {\r\n        day: \"numeric\",\r\n        month: \"short\"\r\n    });\r\n\r\n    frappe.db.count('testingcal', {\r\n        filters: {\r\n            startdate: ['between', [startdate.toISOString().split('T')[0], enddate.toISOString().split('T')[0]]]\r\n        }\r\n    }).then(count => {\r\n        root_element.querySelector('#totalcount').textContent = count? count:0;\r\n    })",
+  "style": ""
+ }
+]

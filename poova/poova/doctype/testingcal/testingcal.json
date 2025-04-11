@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "autoincrement",
+ "creation": "2025-03-17 13:42:14.684598",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "startdate",
+  "end_date",
+  "title",
+  "assigned",
+  "vechicle",
+  "jobtitle",
+  "technicians",
+  "vehicles"
+ ],
+ "fields": [
+  {
+   "fieldname": "startdate",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Startdate"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "End Date"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Title",
+   "options": "SalesPoc"
+  },
+  {
+   "fieldname": "assigned",
+   "fieldtype": "Link",
+   "label": "Assigned",
+   "options": "User"
+  },
+  {
+   "fieldname": "vechicle",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vechicle",
+   "options": "Vehicles"
+  },
+  {
+   "fieldname": "jobtitle",
+   "fieldtype": "Data",
+   "label": "Jobtitle"
+  },
+  {
+   "fieldname": "technicians",
+   "fieldtype": "Table MultiSelect",
+   "in_standard_filter": 1,
+   "label": "Technicians",
+   "options": "Userchild"
+  },
+  {
+   "fieldname": "vehicles",
+   "fieldtype": "Table MultiSelect",
+   "label": "Vehicles",
+   "options": "childdoc"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-09 11:51:04.312575",
+ "modified_by": "Administrator",
+ "module": "POC",
+ "name": "testingcal",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Engineer",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

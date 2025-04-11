@@ -1,0 +1,24 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "testingcal",
+  "enabled": 1,
+  "modified": "2025-04-11 12:30:44.400467",
+  "module": "Poova",
+  "name": "tesing",
+  "script": "frappe.views.calendar[\"testingcal\"] = {\r\n    field_map: {\r\n        \"start\": \"startdate\",  // Use your actual field name\r\n        \"end\": \"end_date\",\r\n        \"title\": \"title\"\r\n    }\r\n};\r\n\r\n",
+  "view": "List"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "SalesPoc",
+  "enabled": 1,
+  "modified": "2025-04-11 12:30:57.038793",
+  "module": "Poova",
+  "name": "SidebarHideSalesPOCList",
+  "script": "// frappe.listview_settings['SalesPoc'] = {\r\n//     onload: function(listview) {\r\n//         // Hide the sidebar when the list view loads\r\n//         $('.list-sidebar').hide();\r\n//     },\r\n//     refresh: function(listview) {\r\n//         // Also hide it on refresh just in case\r\n//         $('.list-sidebar').hide();\r\n//         frm.page.sidebar.toggle(false);\r\n//     }\r\n// };\r\n// frappe.listview_settings['SalesPoc'] = {\r\n//     onload: function(listview) {\r\n//         frappe.after_ajax(() => {\r\n//             const page = listview.page;\r\n//             if (page && page.sidebar) {\r\n//                 page.sidebar.toggle(false); // Properly collapse the sidebar space\r\n//                 $('.list-sidebar').hide();   // Also hide sidebar DOM if needed\r\n//             }\r\n//         });\r\n//     },\r\n//     refresh: function(listview) {\r\n//         frappe.after_ajax(() => {\r\n//             const page = listview.page;\r\n//             if (page && page.sidebar) {\r\n//                 page.sidebar.toggle(false);\r\n//                 $('.list-sidebar').hide();\r\n//             }\r\n//         });\r\n//     }\r\n// };\r\nfrappe.listview_settings['SalesPoc'] = {\r\n    onload: function(listview) {\r\n        frappe.after_ajax(() => {\r\n            const page = listview.page;\r\n\r\n            // Collapse sidebar properly\r\n            if (page && page.sidebar) {\r\n                page.sidebar.toggle(false);\r\n                $('.list-sidebar').hide();\r\n            }\r\n\r\n            // Add custom styles to the list view container\r\n            $(\".layout-main-section\").css({\r\n                \"background-color\": \"#f0f8ff\",   // light blue\r\n                \"padding\": \"20px\"\r\n            });\r\n\r\n            // Style the list items (rows)\r\n            $(\".list-row-container\").css({\r\n                \"background\": \"#ffffff\",\r\n                \"border\": \"1px solid #dee2e6\",\r\n                \"border-radius\": \"10px\",\r\n                \"margin-bottom\": \"10px\",\r\n                \"padding\": \"15px\",\r\n                \"box-shadow\": \"0 2px 4px rgba(0, 0, 0, 0.05)\"\r\n            });\r\n\r\n            // Style list headings\r\n            $(\".list-row-col\").css({\r\n                \"font-size\": \"14px\",\r\n                \"color\": \"#333\"\r\n            });\r\n\r\n            // Optional: change title\r\n            $(\".listview-heading\").css({\r\n                \"font-size\": \"20px\",\r\n                \"font-weight\": \"bold\",\r\n                \"color\": \"#222\",\r\n                \"margin-bottom\": \"15px\"\r\n            });\r\n        });\r\n    },\r\n\r\n    refresh: function(listview) {\r\n        // Same as onload to make sure design is applied after refresh\r\n        frappe.listview_settings['SalesPoc'].onload(listview);\r\n    }\r\n};\r\n\r\n",
+  "view": "List"
+ }
+]
